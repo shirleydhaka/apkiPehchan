@@ -317,4 +317,7 @@ a {
     color: #666;
     text-align: center;
   }
+  .hero h1{
+    text-align: center;
+  }
 }
