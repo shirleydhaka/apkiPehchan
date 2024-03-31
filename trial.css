@@ -292,7 +292,7 @@ a {
 }
 @media screen and (max-width: 425px) {
   .btn-enter {
-    margin-top: -10px;
+    margin-top: -20px;
   }
 }
 
