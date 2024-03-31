@@ -267,7 +267,6 @@ a {
 .action {
     margin-top: 19px;
     padding: 10px 20px;
-    font-size: 16px;
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -276,8 +275,45 @@ a {
     left: 45%;
     position: absolute;
     border-radius: 10px;
-    margin-left: 3px;
+    margin-left: 8px;
 }
 .action {
     background-color: #0056b3;
+    font-size: 14px;
 } 
+
+
+@media screen and (max-width: 600px) {
+  .btn-enter {
+    font-size: 14px;
+    padding: 8px 16px;
+    margin-left: -12px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .btn-enter {
+    margin-top: -20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .action {
+    margin-left: -23px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .text h2 {
+    font-size: 21px;
+    color: #666;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .hero h3 {
+    font-size: 21px;
+    color: #666;
+    text-align: center;
+  }
+}
