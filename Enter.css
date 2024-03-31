@@ -28,7 +28,8 @@ text-align: center;
 font-family: Arial, Helvetica, sans-serif
 }
 .text p{
-  font-family: Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f5f5f5;
 }
 
 *{
@@ -144,17 +145,22 @@ display: none;
 @media only screen and (max-width: 768px) {
   #languageSelect {
     width: 18%;
-    margin-left: 224px;
+    margin-left: 302px;
     font-size: 21px;
   }
 }
 @media only screen and (max-width: 480px) {
   #languageSelect {
     width: 36%;
-    margin-left: 134px;
+    margin-left: 146px;
   }
 }
-
+@media (min-width: 900px) {
+  #languageSelect{
+    width: 20%;
+    margin-left: 470px;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .text {
@@ -170,17 +176,38 @@ display: none;
   }
 }
 
-
-@media only screen and (max-width: 768px) {
-  /* Add your CSS adjustments here */
-  #textdisplay {
-    font-size: 20px; /* Example: Adjust font size for smaller screens */
-  }
-}
-
 @media only screen and (max-width: 480px) {
   /* Add your CSS adjustments here */
   #textdisplay {
     font-size: 16px; /* Example: Further adjust font size for even smaller screens */
+    color: #f5f5f5;
   }
 }
+
+@media (max-width: 600px) {
+  #textDisplay {
+    color: #f5f5f5;
+    margin-left: 3px;
+    font-size: 18px;
+  }
+}
+
+/* Media query for screens between 600px and 900px wide */
+@media (min-width: 600px) and (max-width: 900px) {
+  #textDisplay {
+    font-size: 20px;
+    color: #f5f5f5;
+    margin-left: 75px;
+  }
+}
+
+/* Media query for screens wider than 900px */
+@media (min-width: 900px) {
+  #textDisplay {
+    font-size: 25px;
+    color: #f5f5f5;
+    margin-left: 359px;
+  }
+}
+
+
