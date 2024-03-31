@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Select Language</title>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" >
+<link rel="stylesheet" href="Enter.css">
+</head>
+<body>
+
+  <select id="languageSelect">
+  <option value="english">English</option>
+  <option value="hindi">Hindi</option>
+  <option value="bengali">Bengali</option>
+  <option value="spanish">Spanish</option>
+  <option value="french">French</option>
+  <option value="german">German</option>
+  <option value="chinese">Chinese</option>
+  <!-- Add more language options as needed -->
+  </select>
+  <div class="pargraphContainer">
+    <div class="text">
+    <p>
+      Please select your Preffered Language and Press Record Button
+    </p>
+  </div>
+  <div id="textDisplay">
+    <!-- Text based on selected language will be displayed here -->
+  </div>
+  </div>
+  <main>
+
+    <button class="mic-toggle" id="mic">
+      <span class="material-icons">mic</span>
+    </button>
+
+    <audio class="playback" controls></audio>
+
+  </main>
+
+<script src="Enter.js"></script>
+
+</body>
+</html>
