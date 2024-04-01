@@ -97,7 +97,11 @@ select{
   
       select {
         margin-bottom: 10px;
-        width: 56%;
+        width: 57%;
+        height: 15px;
+        padding: 15px;
+        font-size: 16px;
+
     }
   
   }
