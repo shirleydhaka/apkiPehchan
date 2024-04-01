@@ -211,3 +211,33 @@ display: none;
 }
 
 
+@media (max-width: 600px) {
+  #textDisplay {
+    color: #F5F5F3;
+    margin-left: 85px;
+    font-size: 15px;
+    width: 54%;
+  }
+  #languageSelect{
+    margin-left: 120px;
+    padding-top: 4px;
+  }
+  main {
+    /* Adjusted width */
+    width: 100%;
+  }
+
+  .mic-toggle {
+    font-size: 21px;
+    margin-bottom: 22px;
+    width: 34%;
+    height: 10%;
+  }
+
+  .playback {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+
+
