@@ -52,21 +52,57 @@ const mic_btn = document.querySelector('#mic');
 
         setupAudio();
 
+        // function setupStream(stream) {
+        //     recorder = new MediaRecorder(stream);
+
+        //     recorder.ondataavailable = e => {
+        //         chunks.push(e.data);
+        //     };
+
+        //     recorder.onstop = e => {
+        //         const blob = new Blob(chunks, { type: "audio/wav; codecs=opus" });
+        //         chunks = [];
+        //         const audioURL = window.URL.createObjectURL(blob);
+        //         playback.src = audioURL;
+        //     };
+
+        //     can_record = true;
+        // }
+
         function setupStream(stream) {
-            recorder = new MediaRecorder(stream);
+          recorder = new MediaRecorder(stream);
+      
+          recorder.ondataavailable = e => {
+              chunks.push(e.data);
+          };
+      
+          recorder.onstop = e => {
+              const blob = new Blob(chunks, { type: "audio/wav; codecs=opus" });
+              chunks = [];
+      
+              const audioURL = window.URL.createObjectURL(blob);
+              playback.src = audioURL;
+              const rollNumber = document.getElementById("rollNumber").value;
+              const radioButtonValue = document.querySelector('input[name="namePresentYes"]:checked').value;
+              const filename = rollNumber + radioButtonValue + '.wav';
 
-            recorder.ondataavailable = e => {
-                chunks.push(e.data);
-            };
-
-            recorder.onstop = e => {
-                const blob = new Blob(chunks, { type: "audio/wav; codecs=opus" });
-                chunks = [];
-                const audioURL = window.URL.createObjectURL(blob);
-                playback.src = audioURL;
-            };
-
-            can_record = true;
+              const saveFile = () => {
+                  const a = document.createElement('a');
+                  const url = window.URL.createObjectURL(blob);
+                  a.href = url;
+                  a.download = filename; 
+                  document.body.appendChild(a);
+                  a.click();
+                  setTimeout(() => {
+                      document.body.removeChild(a);
+                      window.URL.revokeObjectURL(url);
+                  }, 0);
+              };
+      
+              saveFile();
+          };
+      
+          can_record = true;
         }
 
         function toggleMic() {
