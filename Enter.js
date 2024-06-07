@@ -5,18 +5,11 @@ document.addEventListener("DOMContentLoaded", function() {
     function displayText(language) {
       switch (language) {
         case "english":
-          textDisplay.textContent = "The towels had been hanging from the rod for years. They were stained and worn, and quite frankly, just plain ugly.Debra didn't want to touch them but she really didn't have a choice. It was important for her to see what was living within them.";
+          textDisplay.textContent = "Please Download your audios and then select and upload them";
           break;
         case "hindi":
-          textDisplay.textContent = "तौलिए वर्षों से रॉड से लटके हुए थे। वे दागदार और घिसे-पिटे थे, और स्पष्ट रूप से, बिल्कुल बदसूरत थे। डेबरा उन्हें छूना नहीं चाहती थी लेकिन उसके पास वास्तव में कोई विकल्प नहीं था। उनके लिए यह देखना महत्वपूर्ण था कि उनके भीतर क्या रह रहा है।";
+          textDisplay.textContent = "कृपया अपने ऑडियो डाउनलोड करें और फिर उन्हें चुनें और अपलोड करें";
           break;
-        case "spanish":
-          textDisplay.textContent = "Las toallas llevaban años colgadas de la barra. Estaban manchadas y desgastadas y, francamente, simplemente feas. Debra no quería tocarlos pero realmente no tenía otra opción. Para ella era importante ver lo que vivía dentro de ellos.";
-          break;
-        case "french":
-          textDisplay.textContent = "Les serviettes étaient suspendues à la tringle depuis des années. Ils étaient tachés et usés et, franchement, tout simplement laids. Debra ne voulait pas les toucher mais elle n'avait vraiment pas le choix. Il était important pour elle de voir ce qui vivait en eux.";
-          break;
-        // Add cases for other languages as needed
         default:
           textDisplay.textContent = "Text not available for selected language.";
       }
