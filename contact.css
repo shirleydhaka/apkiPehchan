@@ -38,13 +38,13 @@ textarea {
 }
 
 .contact-form {
-  background-color: #1abc9c;
+  background-color: #000000;
   position: relative;
 }
 
 .circle {
   border-radius: 50%;
-  background: linear-gradient(135deg, transparent 20%, #149279);
+  background: linear-gradient(135deg, transparent 20%, #000000);
   position: absolute;
 }
 
@@ -173,7 +173,7 @@ textarea.input {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color: #1abc9c;
+  background-color: #000000;
   top: 50%;
   transform: translateY(-50%);
 }
